@@ -34,8 +34,8 @@ def rail_schedule():
         minutes = '30'
 
     return subprocess.check_output(
-        ["java", "-classpath", "/home/ronikhizverg/git/TrainSchedule/TrainSchedule/bin", "userSystem/UserMain",
+        ["java", "-classpath", "/home/afeka/git/TrainSchedule/TrainSchedule/bin", "userSystem/UserMain",
          outformat, source, destination, hour, minutes])
 
     # app.run(port=5000, host="0.0.0.0")
-    # curl "http://localhost:5000/rail?source=Ofakim&destination=Tel%20Aviv-University&hour=5&minutes=20"
+    # curl "http://localhost:5000/?source=Ofakim&destination=Tel%20Aviv-University&hour=5&minutes=20"
